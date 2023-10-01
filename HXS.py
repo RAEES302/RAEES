@@ -776,7 +776,29 @@ def api4(ids,names,passlist):
                                 'fb_api_req_friendly_name':'authenticate',
                         }
                         headers={
-                                'authority': 'p.facebook.com',
+                                'authority': 'm.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'content-type': 'application/x-www-form-urlencoded',
+    # 'cookie': 'dbln=%7B%2261551568122721%22%3A%22LhYhqUkD%22%7D; datr=7yYZZeGiB9Jh5BmUqOVx6ZaO; sb=7yYZZa3PkcT-bVzMrZRU58MT; m_pixel_ratio=2; fr=02cEWIk3dDMqfKMt4.AWV2o5vnZJeLH8f7xisUK6dvteE.BlGSbv.9v.AAA.0.0.BlGSb9.AWVZT_glfuI; c_user=61551568122721; xs=37%3ABT1VMR-XyM4Cgg%3A2%3A1696147198%3A-1%3A-1; m_page_voice=61551568122721; wd=360x676; locale=en_US; fbl_st=101228097%3BT%3A28269120; wl_cbv=v2%3Bclient_version%3A2329%3Btimestamp%3A1696147206; fbl_cs=AhCu4C6PjSd66f3e7XdNREp%2BGEE9cGFmRS9PMzlaS1NGbUxwV1BZZWhOOA; fbl_ci=3676965292586163; vpd=v1%3B676x360x2',
+    'dpr': '2',
+    'origin': 'https://m.facebook.com',
+    'referer': 'https://m.facebook.com/bookmarks/',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Infinix X682B"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
@@ -824,17 +846,25 @@ def api4(ids,names,passlist):
 }
 
 params = {
-    'h': 'AffGk2CJjYKF6jl_yYI',
+ 'h': 'AfdeCUz5FI37Zx7y1RI',
+    't': '1696147232',F6jl_yYI',
     't': '1696113713',
 }
 
 data = {
-    'fb_dtsg': 'NAcPAZhzO0HlQO4bdvNudKZoiGliZJrq0rKS5g96hApzDwiEFNMVSTA:21:1696112926',
+    ''fb_dtsg': 'NAcOyvzEifE5gBPOMpCcCK95v-h2oIpvzBojWHU_COAHv1cMMu7IvBQ:37:1696147198',
+    'jazoest': '25457',
+}4bdvNudKZoiGliZJrq0rKS5g96hApzDwiEFNMVSTA:21:1696112926',
     'jazoest': '25521',
 }
 
 response = requests.post(
-    'https://p.facebook.com/login/device-based/regular/logout/',
+    ''https://m.facebook.com/login/device-based/regular/logout/',
+    params=params,
+    cookies=cookies,
+    headers=headers,
+    data=data,
+)ed/regular/logout/',
     params=params,
     cookies=cookies,
     headers=headers,
